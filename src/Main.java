@@ -10,13 +10,12 @@ public class Main {
         Calculations calculate = new Calculations();
 
 
-
-
         table.setNumberOfPeople(info.numberOfPeople(userInput,0));
         info.collectNames(table.getNumberOfPeople(), userInput, table.getNameCollection());
         info.transferData(table.getNameCollection(), table.getUserData(), userInput);
         double averageValue = calculate.findAverage(table.getUserData(), table.getNumberOfPeople(), 0);
         calculate.findDifference(table.getUserData(),averageValue);
+        calculate.organizeData(table.getUserData(),table.getUnderPaid());
     }
 
 

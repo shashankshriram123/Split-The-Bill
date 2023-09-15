@@ -5,6 +5,7 @@ public class SetParameters {
     private int numberOfPeople;
     private HashMap<String, Double> userData = new HashMap<>();
     private ArrayList<String> nameCollection = new ArrayList<>();
+    private ArrayList<String> underPaid = new ArrayList<>();
 
 
     public void setNumberOfPeople(int numberOfPeople){
@@ -26,6 +27,12 @@ public class SetParameters {
     }
     public ArrayList<String> getNameCollection(){
         return nameCollection;
+    }
+    public ArrayList<String> getUnderPaid(){
+        return underPaid;
+    }
+    public void setUnderPaid(String name){
+        underPaid.add(name);
     }
 
 }
