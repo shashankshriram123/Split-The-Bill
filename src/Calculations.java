@@ -51,6 +51,7 @@ public class Calculations {
 
     public void findPayments(HashMap<String, Double> userData, ArrayList<String> underPaid, ArrayList<String> overPaid, double tempAmount){
         int counter = 0;
+        //
         //while(userData.values() != 0.0)
         for(String names : underPaid){
             System.out.println(userData);
