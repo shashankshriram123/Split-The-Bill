@@ -14,8 +14,10 @@ public class Main {
         info.collectNames(table.getNumberOfPeople(), userInput, table.getNameCollection());
         info.transferData(table.getNameCollection(), table.getUserData(), userInput);
         double averageValue = calculate.findAverage(table.getUserData(), table.getNumberOfPeople(), 0);
+        System.out.println("AVERAGE : " + averageValue);
         calculate.findDifference(table.getUserData(),averageValue);
-        calculate.organizeData(table.getUserData(),table.getUnderPaid());
+        calculate.organizeData(table.getUserData(),table.getUnderPaid(), table.getOverPaid());
+        calculate.findPayments(table.getUserData(), table.getUnderPaid(), table.getOverPaid(),0);
     }
 
 
