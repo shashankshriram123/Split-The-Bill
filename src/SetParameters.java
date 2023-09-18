@@ -22,7 +22,7 @@ public class SetParameters {
     public HashMap<String, Double> getUserData(){
         return userData;
     }
-
+    //adsfasdf
     public void setNameCollection(String names){
         nameCollection.add(names);
     }
