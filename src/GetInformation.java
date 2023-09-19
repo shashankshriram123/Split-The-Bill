@@ -25,4 +25,11 @@ public class GetInformation {
             userData.put(name, userInput.nextDouble());
         }
     }
+
+    public void clearData(ArrayList<String> underPaid, ArrayList<String> overPaid){
+        System.out.println("CLEAR : " + underPaid);
+        underPaid.clear();
+        overPaid.clear();
+        System.out.println(underPaid);
+    }
 }

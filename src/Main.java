@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
@@ -16,8 +17,10 @@ public class Main {
         double averageValue = calculate.findAverage(table.getUserData(), table.getNumberOfPeople(), 0);
         System.out.println("AVERAGE : " + averageValue);
         calculate.findDifference(table.getUserData(),averageValue);
+        calculate.roundNumbers(table.getUserData());
         calculate.organizeData(table.getUserData(),table.getUnderPaid(), table.getOverPaid());
         calculate.findPayments(table.getUserData(), table.getUnderPaid(), table.getOverPaid(),0);
+        info.clearData(table.getUnderPaid(),table.getOverPaid());
     }
 
 
